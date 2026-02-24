@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto UGB</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="UGB Logo">
+    </div>
+    <div class="titulo">
+      Parcial Primer Cómputo<br>
+      Ingeniería en Sistemas y Redes Informáticas
+    </div>
+  </header>
+
+  <main>
+    <h1>Agenda de Citas Personales</h1>
+
+    <form id="agendaForm">
+      <label for="tituloCita">Título de la cita:</label>
+      <input type="text" id="tituloCita" name="tituloCita" required placeholder="Ejemplo: Consulta médica">
+
+      <label for="fechaCita">Fecha de la cita:</label>
+      <input type="date" id="fechaCita" name="fechaCita" required>
+
+      <label for="horaCita">Hora de la cita:</label>
+      <input type="time" id="horaCita" name="horaCita" required>
+
+      <label for="tipoCita">Tipo de cita:</label>
+      <select id="tipoCita" name="tipoCita" required>
+        <option value="">Seleccione...</option>
+        <option value="Médica">Médica</option>
+        <option value="Académica">Académica</option>
+        <option value="Laboral">Laboral</option>
+        <option value="Personal">Personal</option>
+      </select>
+
+      <button type="submit">Agregar Cita</button>
+    </form>
+
+    <section id="listaCitas">
+      <h2>Citas Registradas</h2>
+      <!-- Aquí se mostrarán las citas dinámicamente -->
+    </section>
+  </main>
+
+  <footer>
+    <h3>Estudiante</h3>
+    <p>Cesia Madai Avalos Díaz &nbsp;&nbsp;&nbsp; SMSS063623</p>
+  </footer>
+
+  <!-- Enlace al script -->
+  <script src="script.js"></script>
+</body>
+</html>
